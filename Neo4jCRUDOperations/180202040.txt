@@ -1,0 +1,342 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Yazlab2Proje3.Identity;
+using Yazlab2Proje3.Models;
+using Neo4jClient;
+using Newtonsoft.Json;
+using System.Net;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
+namespace Yazlab2Proje3.Controllers
+{
+    public class AccountController:Controller
+    {
+        private readonly IGraphClient _client;
+        private readonly IWebHostEnvironment _hostingEnvironment;
+    
+        private UserManager<Users> _userManager;
+        private SignInManager<Users> _signInManager;
+        
+        public AccountController(UserManager<Users> userManager, SignInManager<Users> signInManager, IWebHostEnvironment hostingEnvironment, IGraphClient client)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;  
+            _hostingEnvironment = hostingEnvironment;
+            _client = client;
+            
+        }
+        public IActionResult Login()
+        {   
+
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginModel model)
+        {   
+            if(!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var user = await _userManager.FindByNameAsync(model.UserName);
+            if(user == null)
+            {
+                ModelState.AddModelError("UserName", "Bu kullanıcı adıyla eşleşen bir kayıt yok");
+                
+                return View(model);
+            }
+            if(model.Password == null)
+            {
+                ModelState.AddModelError("Password", "Boş bırakılamaz");
+            }
+            var result = await _signInManager.PasswordSignInAsync(user,model.Password,false,false);
+            if(result.Succeeded)
+            {
+                return RedirectToAction("swagger","Login");
+            }
+            ModelState.AddModelError("", "Girilen kullanıcı adı veya parola yanlış.");
+            return View(model);
+        }
+        public IActionResult Register()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterModel model)
+        {
+            if(!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            var user = new Users(){
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                UserName = model.UserName,
+                Email = model.Email
+
+            };
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if(result.Succeeded)
+            {
+                return RedirectToAction("Login","Account");
+            }
+
+            ModelState.AddModelError("Password","En az bir büyük, bir küçük harf ve rakamlardan oluşmalıdır. En az 5 karakter içermelidir");
+            
+            return View(model);
+        }  
+        
+
+        
+    }
+}
+
+______________________________________________________________________________________________________________________
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Yazlab2Proje3.Identity;
+using Yazlab2Proje3.Models;
+using Neo4jClient;
+using Newtonsoft.Json;
+using System.Net;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
+namespace Yazlab2Proje3.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class ResearchController:ControllerBase
+    {
+        private readonly IGraphClient _client;
+
+        public ResearchController(IGraphClient client)
+       {
+          _client = client; 
+       }
+
+       [HttpGet]
+       public async Task<IActionResult> Get(){
+             var researches = await _client.Cypher.Match("(n: Research)")
+                                                   .Return(n => n.As<Research>()).ResultsAsync;
+
+            return Ok(researches);
+       }
+
+       [HttpGet("{yayinadi}")]
+       public async Task<IActionResult> GetByName(string yayinadi){
+             var researches = await _client.Cypher.Match("(r : Research)")
+                                                   .Where((Research r) => r.yayinadi == yayinadi)
+                                                   .Return(r => r.As<Research>()).ResultsAsync;
+
+            return Ok(researches.LastOrDefault());
+       }
+
+       [HttpPost]
+       public async Task<IActionResult> Create([FromBody]Research rsch){
+           await _client.Cypher.Create("(r:Research $rsch)")
+                               .WithParam("rsch", rsch)
+                               .ExecuteWithoutResultsAsync();
+
+            return Ok();
+       }
+
+       [HttpPut("{yayinadi}")]
+       public async Task<IActionResult> Update(string yayinadi, [FromBody]Research rsch){
+            await _client.Cypher.Match("(r:Research)")
+                                .Where((Research r) => r.yayinadi == yayinadi)
+                                .Set("r = $rsch")
+                                .WithParam("rsch", rsch)
+                                .ExecuteWithoutResultsAsync();
+           return Ok();
+       }
+
+       [HttpDelete("{yayinadi}")]
+       public async Task<IActionResult> Delete(string yayinadi){
+            await  _client.Cypher.Match("(r:Research)")
+                                 .Where((Research r) => r.yayinadi == yayinadi)
+                                 .Delete("r")
+                                 .ExecuteWithoutResultsAsync();
+            return Ok();
+
+       }
+    }
+}
+______________________________________________________________________________________________________________________
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Yazlab2Proje3.Identity;
+using Yazlab2Proje3.Models;
+using Neo4jClient;
+using Newtonsoft.Json;
+using System.Net;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
+
+namespace Yazlab2Proje3.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class ResearcherController:ControllerBase
+    {
+       private readonly IGraphClient _client;
+
+       public ResearcherController(IGraphClient client)
+       {
+          _client = client; 
+       } 
+
+        [HttpGet]
+       public async Task<IActionResult> Get(){
+             var researchers = await _client.Cypher.Match("(n: Researcher)")
+                                                   .Return(n => n.As<Researcher>()).ResultsAsync;
+
+            return Ok(researchers);
+       }
+
+       [HttpGet("{name}")]
+       public async Task<IActionResult> GetByName(string name){
+             var researchers = await _client.Cypher.Match("(r : Researcher)")
+                                                   .Where((Researcher r) => r.name == name)
+                                                   .Return(r => r.As<Researcher>()).ResultsAsync;
+
+            return Ok(researchers.LastOrDefault());
+       }
+
+       [HttpPost]
+       public async Task<IActionResult> Create([FromBody]Researcher rscher){
+           await _client.Cypher.Create("(r:Researcher $rscher)")
+                               .WithParam("rscher", rscher)
+                               .ExecuteWithoutResultsAsync();
+
+            return Ok();
+       }
+
+       [HttpPut("{name}")]
+       public async Task<IActionResult> Update(string name, [FromBody]Researcher rscher){
+            await _client.Cypher.Match("(r:Researcher)")
+                                .Where((Researcher r) => r.name == name)
+                                .Set("r = $rscher")
+                                .WithParam("rscher", rscher)
+                                .ExecuteWithoutResultsAsync();
+           return Ok();
+       }
+
+       [HttpDelete("{name}")]
+       public async Task<IActionResult> Delete(string name){
+            await  _client.Cypher.Match("(r:Researcher)")
+                                 .Where((Researcher r) => r.name == name)
+                                 .Delete("r")
+                                 .ExecuteWithoutResultsAsync();
+            return Ok();
+
+       }
+
+    }
+}
+_______________________________________________________________________________________________________________-
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Yazlab2Proje3.Identity;
+using Yazlab2Proje3.Models;
+using Neo4jClient;
+using Newtonsoft.Json;
+using System.Net;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
+namespace Yazlab2Proje3.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class TypeOfController:ControllerBase
+    {
+        private readonly IGraphClient _client;
+
+        public TypeOfController(IGraphClient client)
+        {
+            _client = client; 
+        }
+
+         [HttpGet]
+       public async Task<IActionResult> Get(){
+             var turler = await _client.Cypher.Match("(n: Type)")
+                                                   .Return(n => n.As<Yazlab2Proje3.Models.Type>()).ResultsAsync;
+
+            return Ok(turler);
+       }
+
+       [HttpGet("{tur}")]
+       public async Task<IActionResult> GetByName(string tur){
+             var turler = await _client.Cypher.Match("(r : Type)")
+                                                   .Where((Yazlab2Proje3.Models.Type r) => r.tur == tur)
+                                                   .Return(r => r.As<Yazlab2Proje3.Models.Type>()).ResultsAsync;
+
+            return Ok(turler.LastOrDefault());
+       }
+
+       [HttpPost]
+       public async Task<IActionResult> Create([FromBody]Yazlab2Proje3.Models.Type rsch){
+           await _client.Cypher.Create("(r:Type $rsch)")
+                               .WithParam("rsch", rsch)
+                               .ExecuteWithoutResultsAsync();
+
+            return Ok();
+       }
+
+       [HttpPut("{tur}")]
+       public async Task<IActionResult> Update(string tur, [FromBody]Yazlab2Proje3.Models.Type rsch){
+            await _client.Cypher.Match("(r:Type)")
+                                .Where((Yazlab2Proje3.Models.Type r) => r.tur == tur)
+                                .Set("r = $rsch")
+                                .WithParam("rsch", rsch)
+                                .ExecuteWithoutResultsAsync();
+           return Ok();
+       }
+
+       [HttpDelete("{tur}")]
+       public async Task<IActionResult> Delete(string tur){
+            await  _client.Cypher.Match("(r:Type)")
+                                 .Where((Yazlab2Proje3.Models.Type r) => r.tur == tur)
+                                 .Delete("r")
+                                 .ExecuteWithoutResultsAsync();
+            return Ok();
+
+       }
+    }
+}
+
+
+

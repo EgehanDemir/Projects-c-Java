@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "jJsqXed2nKWi5GAFFhrtLPR5greaGXTvFY+P9alLdj5NrIuCsOBn1jm7slB+xMCP59g3DqSxb3tMCH89wz1iKA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\EgehanKlasorrler\\AspnetProjects\\Egehan_Demir_180202040_Yazlab2.3\\Yazlab2Proje3Genel\\Yazlab2Proje3.entity\\Yazlab2Proje3.entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
