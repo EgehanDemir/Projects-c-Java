@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="GUI - 1\TeslimatDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI - 1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI - 1\KayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI - 1\SifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI - 1\TeslimatAdres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI-2\TeslimatRota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

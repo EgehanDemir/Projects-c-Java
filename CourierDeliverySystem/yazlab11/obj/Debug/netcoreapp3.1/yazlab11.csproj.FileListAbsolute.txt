@@ -1,0 +1,150 @@
+C:\Users\suayb\source\repos\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.exe
+C:\Users\suayb\source\repos\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.deps.json
+C:\Users\suayb\source\repos\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.runtimeconfig.json
+C:\Users\suayb\source\repos\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.runtimeconfig.dev.json
+C:\Users\suayb\source\repos\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.dll
+C:\Users\suayb\source\repos\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.pdb
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.AssemblyReference.cache
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.Form1.resources
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.KayitOl.resources
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.SifreDegistir.resources
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.TeslimatAdres.resources
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.TeslimatDurum.resources
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.GenerateResource.cache
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.AssemblyInfoInputs.cache
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.AssemblyInfo.cs
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.CoreCompileInputs.cache
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.dll
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.pdb
+C:\Users\suayb\source\repos\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.genruntimeconfig.cache
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.exe
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.deps.json
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.runtimeconfig.json
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.runtimeconfig.dev.json
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.pdb
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GMap.NET.Core.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GMap.NET.WindowsForms.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GMap.NET.WindowsPresentation.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\System.Data.SQLite.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\System.Data.SQLite.EF6.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.AssemblyReference.cache
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.Form1.resources
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.KayitOl.resources
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.SifreDegistir.resources
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.TeslimatAdres.resources
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.TeslimatDurum.resources
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.GenerateResource.cache
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.AssemblyInfoInputs.cache
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.AssemblyInfo.cs
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.CoreCompileInputs.cache
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.pdb
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.genruntimeconfig.cache
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.exe
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.deps.json
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.runtimeconfig.json
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.runtimeconfig.dev.json
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.pdb
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\FireSharp.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\FireSharp.Serialization.JsonNet.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GMap.NET.Core.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GMap.NET.WindowsForms.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GMap.NET.WindowsPresentation.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\System.Data.SQLite.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\System.Data.SQLite.EF6.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.AssemblyReference.cache
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.Form1.resources
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.KayitOl.resources
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.SifreDegistir.resources
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.TeslimatAdres.resources
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.TeslimatDurum.resources
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.GUI_2.KargoSecimi.resources
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.GUI_2.TeslimatRota.resources
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.GenerateResource.cache
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.AssemblyInfoInputs.cache
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.AssemblyInfo.cs
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.CoreCompileInputs.cache
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.CopyComplete
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.dll
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.pdb
+C:\Users\suayb\OneDrive\Masaüstü\yazlab11\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.genruntimeconfig.cache
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\FireSharp.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\FireSharp.Serialization.JsonNet.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.GUI_2.TeslimatRota.resources
+C:\Users\emren\Documents\Visual Studio Projects\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GeoCoordinate.NetStandard1.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.exe
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.deps.json
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.runtimeconfig.json
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.runtimeconfig.dev.json
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\yazlab11.pdb
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\FireSharp.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\FireSharp.Serialization.JsonNet.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GeoCoordinate.NetStandard1.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GMap.NET.Core.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GMap.NET.WindowsForms.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\GMap.NET.WindowsPresentation.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\System.Data.SQLite.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\System.Data.SQLite.EF6.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.Form1.resources
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.KayitOl.resources
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.SifreDegistir.resources
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.TeslimatAdres.resources
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.TeslimatDurum.resources
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.GUI_2.TeslimatRota.resources
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.GenerateResource.cache
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.AssemblyInfoInputs.cache
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.AssemblyInfo.cs
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.dll
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.pdb
+C:\Users\ASUS\OneDrive\Masaüstü\yazlab11\yazlab11\obj\Debug\netcoreapp3.1\yazlab11.genruntimeconfig.cache

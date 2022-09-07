@@ -1,0 +1,14 @@
+C:\Users\suayb\source\repos\ayildiz\ayildiz\bin\Debug\netcoreapp3.1\ayildiz.exe
+C:\Users\suayb\source\repos\ayildiz\ayildiz\bin\Debug\netcoreapp3.1\ayildiz.deps.json
+C:\Users\suayb\source\repos\ayildiz\ayildiz\bin\Debug\netcoreapp3.1\ayildiz.runtimeconfig.json
+C:\Users\suayb\source\repos\ayildiz\ayildiz\bin\Debug\netcoreapp3.1\ayildiz.runtimeconfig.dev.json
+C:\Users\suayb\source\repos\ayildiz\ayildiz\bin\Debug\netcoreapp3.1\ayildiz.dll
+C:\Users\suayb\source\repos\ayildiz\ayildiz\bin\Debug\netcoreapp3.1\ayildiz.pdb
+C:\Users\suayb\source\repos\ayildiz\ayildiz\obj\Debug\netcoreapp3.1\ayildiz.csproj.AssemblyReference.cache
+C:\Users\suayb\source\repos\ayildiz\ayildiz\obj\Debug\netcoreapp3.1\ayildiz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suayb\source\repos\ayildiz\ayildiz\obj\Debug\netcoreapp3.1\ayildiz.AssemblyInfoInputs.cache
+C:\Users\suayb\source\repos\ayildiz\ayildiz\obj\Debug\netcoreapp3.1\ayildiz.AssemblyInfo.cs
+C:\Users\suayb\source\repos\ayildiz\ayildiz\obj\Debug\netcoreapp3.1\ayildiz.csproj.CoreCompileInputs.cache
+C:\Users\suayb\source\repos\ayildiz\ayildiz\obj\Debug\netcoreapp3.1\ayildiz.dll
+C:\Users\suayb\source\repos\ayildiz\ayildiz\obj\Debug\netcoreapp3.1\ayildiz.pdb
+C:\Users\suayb\source\repos\ayildiz\ayildiz\obj\Debug\netcoreapp3.1\ayildiz.genruntimeconfig.cache

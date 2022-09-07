@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FireSharp.Serialization.JsonNet" Version="1.1.0" />
+    <PackageReference Include="GeoCoordinate.NetStandard1" Version="1.0.1" />
+    <PackageReference Include="GMap.NET.Core" Version="2.0.2" />
+    <PackageReference Include="GMap.NET.WinForms" Version="2.0.2" />
+    <PackageReference Include="GMap.NET.WinPresentation" Version="2.0.2" />
+  </ItemGroup>
+
+</Project>
