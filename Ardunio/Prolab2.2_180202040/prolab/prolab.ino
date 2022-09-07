@@ -1,0 +1,124 @@
+#include <LiquidCrystal.h>
+#include <Keypad.h>  //kütüphaneyi eredLightik
+
+LiquidCrystal lcd(50, 51, 3, 4, 5, 6);
+
+int buzzerPin = 13;
+int lampPin = 7;
+int redLight = 11;
+int greenLight =12;
+
+int flameSensor = A0;
+int flame_detected;
+
+int PIRSensor = A1;
+int PIR_detected;
+
+int tempSensor= 3;
+int val;
+
+char sifremiz[4] = {'1', '2', '3', '4'}; //sifremizi oluşturduk 
+char girilensifre[4]; //kullanının gireceği şifreyi tutacak olan değişkenimiz
+int i=0;  
+
+const byte satir=4;  // satır sayımızı yazdık
+const byte sutun=3;  // sutun sayımızı yazdık
+char tus_takimi[satir][sutun]={
+  {'1','2','3'},
+  {'4','5','6'},
+  {'7','8','9'},
+  {'*','0','#'}
+  };
+
+
+char tus;
+byte satir_pinleri[satir]={25,26,27,28};  //satırları bağladığımız pinler
+byte sutun_pinleri[satir]={24,23,22};  //sutunları bagladığımız pinler
+
+Keypad tuslarim=Keypad(makeKeymap(tus_takimi),satir_pinleri,sutun_pinleri,satir, sutun);
+
+void setup() {
+  pinMode(buzzerPin,OUTPUT);
+  pinMode(lampPin,OUTPUT);
+  pinMode(redLight,OUTPUT);
+  pinMode(greenLight,OUTPUT);
+  pinMode(flameSensor, INPUT);
+  pinMode(PIRSensor, INPUT);
+  Serial1.begin(9600);
+  lcd.begin(16, 2);
+  digitalWrite(redLight,1);
+}
+
+void loop() {
+  flame_detected = digitalRead(flameSensor);
+  PIR_detected = digitalRead(PIRSensor);
+
+  val = analogRead(tempSensor);
+  float mv = (val / 1023.0 )* 5000;
+  float sicaklik = mv /10;
+  //Serial1.println("Sicaklik = "+String(sicaklik, 3)+"*C");
+
+  /*if(sicaklik > 30){
+    Serial1.println("Sicaklik yükseldi");
+  }else if(sicaklik < 20){
+    Serial1.println("Sicaklik dustu");
+  }else if(sicaklik > 20 && sicaklik < 30){
+    Serial1.println("Sicaklik Normal");
+  }*/
+    
+  lcd.print(sicaklik);
+  delay(500);
+  lcd.clear();
+
+  
+  
+
+  if (flame_detected == 1)
+  { 
+    digitalWrite(buzzerPin,HIGH);
+  }else{
+    digitalWrite(buzzerPin,LOW);
+  }
+
+  if (PIR_detected == 1)
+  { 
+    digitalWrite(lampPin,HIGH);
+  }else{
+    digitalWrite(lampPin,LOW);
+  }
+
+  tus=tuslarim.getKey();  //herhangi bir tuşa basıldığında tus isimli değişken bunu hafızaya alacak.
+  if (tus)    //herhangi bir tuşa basıldığında
+  {
+    girilensifre[i++] = tus;
+    delay(100);
+    String pass;
+    for(int x=0;x<i;x++){
+      pass += "*"; 
+    }
+    Serial1.println(tus);  //seri ekrana yaz
+  }
+
+  if (i == 4)
+  { 
+    if ((strncmp(girilensifre, sifremiz, 4) == 0))   // iki değişken içindeki değerlerin aynı olup olmadığını karşılaştırıyor. Aynı ise 0 değeri geliyor.
+        {  
+          digitalWrite(redLight,0);
+          digitalWrite(greenLight,1);
+          //şifre doğru girildiyse yeşil led yansın.
+          Serial1.println("Dugru sifre girdiniz");
+          delay(200);
+          i=0;  //i değerini 0'a eşitlemezsek, sadece bir kez şifre girmeye müsade eder. çünkü i==4 bir daha gerçekleşmez.
+       }
+
+    else
+      {
+        digitalWrite(redLight,1);
+        digitalWrite(greenLight,0);
+         //şifre yanlış girildiyse kırmızı led yansın.
+        Serial1.println("Yanlis sifre girdiniz");
+        delay(200);
+         i=0; //i değerini 0'a eşitlemezsek, sadece bir kez şifre girmeye müsade eder. çünkü i==4 bir daha gerçekleşmez.
+        }
+  }
+}
