@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD23AFB5-D4AA-417A-9690-F2AFB8AC24B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YatırBank</RootNamespace>
+    <AssemblyName>YatırBank</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankaDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankaDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankaDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankaDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankaDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankaMuduruForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankaMuduruForm.Designer.cs">
+      <DependentUpon>BankaMuduruForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MudurMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MudurMusteri.Designer.cs">
+      <DependentUpon>MudurMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MudurPara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MudurPara.Designer.cs">
+      <DependentUpon>MudurPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MudurTemsilciİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MudurTemsilciİslemleri.Designer.cs">
+      <DependentUpon>MudurTemsilciİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mudurİslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mudurİslemler.Designer.cs">
+      <DependentUpon>Mudurİslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriBorclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriBorclar.Designer.cs">
+      <DependentUpon>MusteriBorclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriHesapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriHesapForm.Designer.cs">
+      <DependentUpon>MusteriHesapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriMusteriIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriMusteriIslemleri.Designer.cs">
+      <DependentUpon>MusteriMusteriIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MüşteriFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüşteriFormu.Designer.cs">
+      <DependentUpon>MüşteriFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tarih.cs" />
+    <Compile Include="TemsilciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemsilciForm.Designer.cs">
+      <DependentUpon>TemsilciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemsilciHesapOnay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemsilciHesapOnay.Designer.cs">
+      <DependentUpon>TemsilciHesapOnay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemsilciMusteriİslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemsilciMusteriİslem.Designer.cs">
+      <DependentUpon>TemsilciMusteriİslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemsilciMüsteriIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemsilciMüsteriIslemleri.Designer.cs">
+      <DependentUpon>TemsilciMüsteriIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temsilci_Talep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temsilci_Talep.Designer.cs">
+      <DependentUpon>Temsilci_Talep.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BankaMuduruForm.resx">
+      <DependentUpon>BankaMuduruForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MudurMusteri.resx">
+      <DependentUpon>MudurMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MudurPara.resx">
+      <DependentUpon>MudurPara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MudurTemsilciİslemleri.resx">
+      <DependentUpon>MudurTemsilciİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mudurİslemler.resx">
+      <DependentUpon>Mudurİslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriBorclar.resx">
+      <DependentUpon>MusteriBorclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriHesapForm.resx">
+      <DependentUpon>MusteriHesapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriMusteriIslemleri.resx">
+      <DependentUpon>MusteriMusteriIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüşteriFormu.resx">
+      <DependentUpon>MüşteriFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TemsilciForm.resx">
+      <DependentUpon>TemsilciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemsilciHesapOnay.resx">
+      <DependentUpon>TemsilciHesapOnay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemsilciMusteriİslem.resx">
+      <DependentUpon>TemsilciMusteriİslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemsilciMüsteriIslemleri.resx">
+      <DependentUpon>TemsilciMüsteriIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temsilci_Talep.resx">
+      <DependentUpon>Temsilci_Talep.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BankaDataSet.xsc">
+      <DependentUpon>BankaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankaDataSet.xss">
+      <DependentUpon>BankaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet1.xsc">
+      <DependentUpon>BankaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankaDataSet1.xss">
+      <DependentUpon>BankaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet2.xsc">
+      <DependentUpon>BankaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankaDataSet2.xss">
+      <DependentUpon>BankaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet3.xsc">
+      <DependentUpon>BankaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankaDataSet3.xss">
+      <DependentUpon>BankaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet4.xsc">
+      <DependentUpon>BankaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankaDataSet4.xss">
+      <DependentUpon>BankaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet5.xsc">
+      <DependentUpon>BankaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankaDataSet5.xss">
+      <DependentUpon>BankaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet6.xsc">
+      <DependentUpon>BankaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankaDataSet6.xss">
+      <DependentUpon>BankaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet7.xsc">
+      <DependentUpon>BankaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankaDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankaDataSet7.xss">
+      <DependentUpon>BankaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet8.xsc">
+      <DependentUpon>BankaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BankaDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankaDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankaDataSet8.xss">
+      <DependentUpon>BankaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
