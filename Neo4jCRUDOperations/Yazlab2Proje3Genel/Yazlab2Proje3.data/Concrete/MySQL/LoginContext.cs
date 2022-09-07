@@ -15,7 +15,7 @@ namespace Yazlab2Proje3.data.Concrete.MySQL
         public DbSet<Register> Registers { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         {
-            optionsBuilder.UseMySQL("server=localhost;user=root;database=users;password=Eg67350311ad_!;port=3306");
+            optionsBuilder.UseMySQL("server=localhost;user=root;database=users;password=YourPassword;port=YourPort");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
